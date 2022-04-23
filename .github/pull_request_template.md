@@ -2,7 +2,7 @@
 
 <!-- 
 チケットへのリンクを貼ってください 
-https://design-note.atlassian.net/browse/{key}
+https://design-note.atlassian.net/browse/DES-XXX
 -->
 
 ## チェックリスト
