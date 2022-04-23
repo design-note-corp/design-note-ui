@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "run-p dev:*",
+    "dev:next": "next dev",
+    "dev:path": "pathpida --ignorePath .gitignore --watch --enableStatic",
+    "build": "pathpida --ignorePath .gitignore && next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
