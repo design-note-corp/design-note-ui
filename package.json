@@ -6,7 +6,7 @@
     "dev": "run-p dev:*",
     "dev:next": "next dev",
     "dev:path": "pathpida --ignorePath .gitignore --watch --enableStatic",
-    "build": "pathpida --ignorePath .gitignore && next build",
+    "build": "pathpida --ignorePath .gitignore --enableStatic && next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
