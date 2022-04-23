@@ -10,4 +10,9 @@ module.exports = {
   core: {
     builder: "@storybook/builder-webpack5",
   },
+  staticDirs: ["../public"],
+  webpackFinal: async (config) => {
+    config.resolve.alias["next/image"] = require.resolve("./NextImage.js");
+    return config;
+  },
 };
