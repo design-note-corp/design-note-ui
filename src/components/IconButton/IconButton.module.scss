@@ -1,0 +1,10 @@
+.icon-button {
+  border: none;
+  padding: 12px;
+  background-color: transparent;
+
+  &:active {
+    border-radius: 50%;
+    background-color: #eeeeee;
+  }
+}
