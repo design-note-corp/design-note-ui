@@ -22,4 +22,5 @@ const Icon: React.FC<IconProps> = ({ size = 24, variant }) => {
   );
 };
 
+export type { IconProps };
 export { ICON_SIZES, Icon };
