@@ -14,7 +14,9 @@
     "build-storybook": "build-storybook",
     "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
     "path": "pathpida --ignorePath .gitignore --enableStatic",
-    "tsm": "typed-scss-modules src --includePaths src/styles --exportType default --nameFormat none"
+    "tsm": "typed-scss-modules src --includePaths src/styles --exportType default --nameFormat none",
+    "gen": "run-p gen:*",
+    "gen:icons": "svgr public/icons"
   },
   "dependencies": {
     "next": "12.1.5",
