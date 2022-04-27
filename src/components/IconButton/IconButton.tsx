@@ -1,4 +1,4 @@
-import styles from "./IconButton.module.scss";
+import { className } from "./IconButton.css";
 
 type IconButtonProps = React.ComponentProps<"button">;
 
@@ -7,7 +7,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
   ...rest
 }) => {
   return (
-    <button {...rest} className={styles["icon-button"]}>
+    <button {...rest} className={className}>
       {children}
     </button>
   );
