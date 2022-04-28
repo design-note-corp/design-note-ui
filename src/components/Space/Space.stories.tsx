@@ -8,32 +8,51 @@ export default {
   component: Space,
 } as ComponentMeta<typeof Space>;
 
-export const Gap: ComponentStory<typeof Space> = (args) => (
-  <Space {...args} width={400} gap={GapEnum.Medium} flexWrap="wrap">
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-  </Space>
-);
+const Template: ComponentStory<typeof Space> = (args) => {
+  return <Space {...args} />;
+};
 
-export const ColumnGap: ComponentStory<typeof Space> = (args) => (
-  <Space {...args} columnGap={GapEnum.Medium}>
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-  </Space>
-);
+export const Gap = Template.bind({});
+Gap.args = {
+  width: 400,
+  gap: GapEnum.Medium,
+  flexWrap: "wrap",
+  children: (
+    <>
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+    </>
+  ),
+};
 
-export const RowGap: ComponentStory<typeof Space> = (args) => (
-  <Space {...args} flexDirection="column" rowGap={GapEnum.Medium}>
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-    <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
-  </Space>
-);
+export const RowGap = Template.bind({});
+RowGap.args = {
+  rowGap: GapEnum.Medium,
+  flexDirection: "column",
+  children: (
+    <>
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+    </>
+  ),
+};
+
+export const ColumnGap = Template.bind({});
+ColumnGap.args = {
+  columnGap: GapEnum.Medium,
+  children: (
+    <>
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+      <div style={{ width: 100, height: 100, backgroundColor: "red" }} />
+    </>
+  ),
+};
