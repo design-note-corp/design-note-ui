@@ -16,7 +16,8 @@
     "path": "pathpida --ignorePath .gitignore --enableStatic",
     "tsm": "typed-scss-modules src --includePaths src/styles --exportType default --nameFormat none",
     "gen": "run-p gen:*",
-    "gen:icons": "svgr public/icons"
+    "gen:icons": "svgr public/icons",
+    "plop": "plop"
   },
   "dependencies": {
     "next": "12.1.5",
