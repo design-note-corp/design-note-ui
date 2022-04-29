@@ -1,4 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { vars } from "../../styles/theme.css";
 import { IconButton } from "../IconButton";
 import { Search } from "../Icons";
 
@@ -18,9 +19,10 @@ Basic.args = {};
 
 export const WithSearchIcon = Template.bind({});
 WithSearchIcon.args = {
+  placeholder: "キーワードで検索",
   suffix: (
     <IconButton>
-      <Search display="block" width={24} height={24} />
+      <Search width={24} height={24} display="block" color={vars.color.light} />
     </IconButton>
   ),
 };
