@@ -1,4 +1,5 @@
 import { assignInlineVars } from "@vanilla-extract/dynamic";
+import clsx from "clsx";
 import { className, vars } from "./Space.css";
 
 export enum Gap {
@@ -12,18 +13,19 @@ type SpaceProps = React.ComponentProps<"div"> &
     React.CSSProperties,
     "width" | "flexWrap" | "alignItems" | "flexDirection" | "justifyContent"
   > & {
-    wrap?: boolean;
+    inline?: boolean;
     gap?: Gap;
     rowGap?: Gap;
     columnGap?: Gap;
   };
 
 export const Space: React.FC<SpaceProps> = ({
-  children,
   gap,
+  inline = false,
   rowGap = gap ?? (0).toString(),
   columnGap = gap ?? (0).toString(),
   width,
+  children,
   flexWrap,
   alignItems,
   flexDirection,
@@ -39,9 +41,10 @@ export const Space: React.FC<SpaceProps> = ({
     <div>
       <div
         {...rest}
-        className={className}
+        className={clsx(className, rest.className)}
         style={{
           ...inlineVars,
+          display: inline ? "inline-flex" : "flex",
           width,
           flexWrap,
           alignItems,
