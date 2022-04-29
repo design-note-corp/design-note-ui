@@ -6,15 +6,18 @@ type TextFieldProps = React.ComponentProps<"input"> & {
   suffix?: React.ReactNode;
 };
 
-export const TextField: React.FC<TextFieldProps> = ({ suffix, ...rest }) => {
+export const TextField: React.FC<TextFieldProps> = ({
+  suffix,
+  width,
+  ...rest
+}) => {
   return (
     <Space
-      {...rest}
+      width={width}
       className={clsx(styles.container, !!suffix && styles.withSuffix)}
-      placeholder="キーワードで検索"
       inline
     >
-      <input className={styles.input} />
+      <input {...rest} className={styles.input} />
       {suffix}
     </Space>
   );

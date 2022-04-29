@@ -17,6 +17,7 @@ export const withSuffix = style({
 });
 
 export const input = style({
+  flex: 1,
   padding: 0,
   border: "none",
   outline: "none",
