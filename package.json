@@ -24,7 +24,8 @@
     "build-storybook": "build-storybook",
     "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
     "svgr": "svgr public/icons",
-    "plop": "plop"
+    "plop": "plop",
+    "release": "shipjs prepare"
   },
   "dependencies": {
     "clsx": "^1.1.1"
