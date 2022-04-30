@@ -2,7 +2,15 @@
 name: "Chromatic"
 
 # Event for the workflow
-on: push
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths:
+      - "src/**"
+      - "public/**"
+      - ".github/workflows/chromatic.yml"
 
 # List of jobs
 jobs:
