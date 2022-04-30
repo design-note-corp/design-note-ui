@@ -16,9 +16,7 @@
     "./style.css": "./dist/style.css"
   },
   "scripts": {
-    "build": "run-p build:*",
-    "build:scripts": "vite build",
-    "build:types": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
