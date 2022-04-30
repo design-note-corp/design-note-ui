@@ -11,10 +11,14 @@ const Template: ComponentStory<typeof Avatar> = (args) => {
   return <Avatar {...args} />;
 };
 
-export const Default = Template.bind({});
-Default.args = {
-  unoptimized: true,
-  src: "https://placehold.jp/40x40.png",
-  width: 40,
-  height: 40,
+export const Image = Template.bind({});
+Image.args = {
+  children: (
+    <img src="https://placehold.jp/40x40.png" width="100%" height="100%" />
+  ),
+};
+
+export const Letter = Template.bind({});
+Letter.args = {
+  children: "H",
 };
