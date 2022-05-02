@@ -51,12 +51,13 @@ SmallMobile.args = {
             />
           </IconButton>
         </div>
-        <Avatar
-          unoptimized={true}
-          src="https://placehold.jp/40x40.png"
-          width={40}
-          height={40}
-        />
+        <Avatar width={40} height={40}>
+          <img
+            src="https://placehold.jp/40x40.png"
+            width="100%"
+            height="100%"
+          />
+        </Avatar>
       </Space>
     </Space>
   ),
@@ -95,12 +96,13 @@ Tablet.args = {
           </IconButton>
         </div>
         <Space alignItems="center">
-          <Avatar
-            unoptimized={true}
-            src="https://placehold.jp/40x40.png"
-            width={40}
-            height={40}
-          />
+          <Avatar width={40} height={40}>
+            <img
+              src="https://placehold.jp/40x40.png"
+              width="100%"
+              height="100%"
+            />
+          </Avatar>
         </Space>
         <Button startIcon={<Edit />}>投稿</Button>
       </Space>
@@ -142,12 +144,13 @@ PC.args = {
           />
         </IconButton>
         <Space alignItems="center">
-          <Avatar
-            unoptimized={true}
-            src="https://placehold.jp/40x40.png"
-            width={40}
-            height={40}
-          />
+          <Avatar width={40} height={40}>
+            <img
+              src="https://placehold.jp/40x40.png"
+              width="100%"
+              height="100%"
+            />
+          </Avatar>
         </Space>
         <Button startIcon={<Edit />}>投稿</Button>
       </Space>

@@ -1,5 +1,5 @@
 import React from "react";
-import { themeClass } from "../src/styles/theme.css";
+import { ThemeProvider } from "../src/components/ThemeProvider";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,8 +13,8 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <div className={themeClass}>
+    <ThemeProvider>
       <Story />
-    </div>
+    </ThemeProvider>
   ),
 ];
