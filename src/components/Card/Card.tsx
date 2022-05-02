@@ -5,7 +5,7 @@ import { CardTitle } from "../CardTitle";
 import { CardChips } from "../CardChips";
 import { CardDescription } from "../CardDescription";
 
-type CardProps = {
+export type CardProps = {
   cover: React.ReactNode;
   title: string;
   chips?: string[];
