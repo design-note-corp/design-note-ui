@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/design-note-corp/design-note-ui/compare/v0.2.0...v0.3.0) (2022-05-02)
+
+
+### Features
+
+* Tabsコンポーネントを追加 ([#29](https://github.com/design-note-corp/design-note-ui/issues/29)) ([e405cf6](https://github.com/design-note-corp/design-note-ui/commit/e405cf683788ddbb2dd5f2db3cad58d82f45de0c))
+
+
+
 # [0.2.0](https://github.com/design-note-corp/design-note-ui/compare/v0.1.3...v0.2.0) (2022-05-02)
 
 
