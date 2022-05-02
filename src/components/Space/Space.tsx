@@ -38,10 +38,10 @@ export const Space: React.FC<SpaceProps> = ({
   });
 
   return (
-    <div>
+    <div className={rest.className}>
       <div
         {...rest}
-        className={clsx(className, rest.className)}
+        className={clsx(className)}
         style={{
           ...inlineVars,
           display: inline ? "inline-flex" : "flex",

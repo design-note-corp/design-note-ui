@@ -12,4 +12,6 @@ const Template: ComponentStory<typeof Chip> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  children: "Label",
+};

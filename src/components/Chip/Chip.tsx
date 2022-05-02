@@ -1,7 +1,7 @@
 import { className } from "./Chip.css";
 
-type ChipProps = {};
+type ChipProps = React.PropsWithChildren<{}>;
 
-export const Chip: React.FC<ChipProps> = (props) => {
-  return <span className={className}>Chip</span>;
+export const Chip: React.FC<ChipProps> = ({ children }) => {
+  return <span className={className}>{children}</span>;
 };
