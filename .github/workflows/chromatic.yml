@@ -6,6 +6,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "src/**"
+      - "public/**"
+      - ".github/workflows/chromatic.yml"
   pull_request:
     types:
       - opened
