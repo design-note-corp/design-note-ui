@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/design-note-corp/design-note-ui/compare/v0.3.0...v0.4.0) (2022-05-02)
+
+
+### Features
+
+* Chipコンポーネントを追加 ([#34](https://github.com/design-note-corp/design-note-ui/issues/34)) ([639fadf](https://github.com/design-note-corp/design-note-ui/commit/639fadf13ffd9a0cb2809620e2a22f55721b4f56)), closes [#33](https://github.com/design-note-corp/design-note-ui/issues/33)
+
+
+
 # [0.3.0](https://github.com/design-note-corp/design-note-ui/compare/v0.2.0...v0.3.0) (2022-05-02)
 
 
