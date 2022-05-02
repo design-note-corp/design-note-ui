@@ -1,5 +1,6 @@
 export * from "./Avatar";
 export * from "./Button";
+export * from "./Chip";
 export * from "./Header";
 export * from "./IconButton";
 export * from "./Icons";
