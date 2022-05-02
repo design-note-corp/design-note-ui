@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/design-note-corp/design-note-ui/compare/v0.4.0...v0.5.0) (2022-05-02)
+
+
+### Features
+
+* Cardコンポーネントを追加 ([#37](https://github.com/design-note-corp/design-note-ui/issues/37)) ([d72f348](https://github.com/design-note-corp/design-note-ui/commit/d72f3485482519fd110bbdfe2277f951082b2359))
+
+
+
 # [0.4.0](https://github.com/design-note-corp/design-note-ui/compare/v0.3.0...v0.4.0) (2022-05-02)
 
 
