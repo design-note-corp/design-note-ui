@@ -1,3 +1,14 @@
+# [0.9.0](https://github.com/design-note-corp/design-note-ui/compare/v0.8.0...v0.9.0) (2022-05-03)
+
+
+### Features
+
+* add sns icons ([#73](https://github.com/design-note-corp/design-note-ui/issues/73)) ([445d82e](https://github.com/design-note-corp/design-note-ui/commit/445d82ef642c21120efd4ce7b5c14ddb325a86d6))
+* add TextButton component ([#74](https://github.com/design-note-corp/design-note-ui/issues/74)) ([09e1572](https://github.com/design-note-corp/design-note-ui/commit/09e157243843772e9022dde74776336ab48bf329))
+* CommentFormにonSubmitを追加 ([#72](https://github.com/design-note-corp/design-note-ui/issues/72)) ([35cfd96](https://github.com/design-note-corp/design-note-ui/commit/35cfd9651e59fca9c07d8240a9c190dcac2d9797))
+
+
+
 # [0.8.0](https://github.com/design-note-corp/design-note-ui/compare/v0.7.0...v0.8.0) (2022-05-03)
 
 
