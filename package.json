@@ -3,6 +3,9 @@
   "license": "MIT",
   "version": "0.5.0",
   "homepage": "https://master--626ce32a1d5489004a1c0e8b.chromatic.com",
+  "bugs": {
+    "url": "https://github.com/design-note-corp/design-note-ui/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/design-note-corp/design-note-ui"
