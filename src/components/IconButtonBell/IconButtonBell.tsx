@@ -1,14 +1,14 @@
 import { vars } from "../../styles";
-import SvgSearch from "../Icons/Search";
+import SvgBell from "../Icons/Bell";
 import { IconButton } from "../IconButton/IconButton";
 import type { IconButtonProps } from "../IconButton/IconButton";
 
-type IconButtonSearchProps = IconButtonProps;
+type IconButtonBellProps = IconButtonProps;
 
-export const IconButtonSearch: React.FC<IconButtonSearchProps> = (props) => {
+export const IconButtonBell: React.FC<IconButtonBellProps> = (props) => {
   return (
-    <IconButton {...props}>
-      <SvgSearch
+    <IconButton>
+      <SvgBell
         width={24}
         height={24}
         display="block"

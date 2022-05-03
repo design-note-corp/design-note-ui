@@ -2,13 +2,11 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Gap, Space } from "../Space";
 import { Header } from "./Header";
-import { IconButton } from "../IconButton";
-import SvgBell from "../Icons/Bell";
 import { Edit } from "../Icons";
 import { Avatar } from "../Avatar";
-import { vars } from "../../styles/theme.css";
 import { Button } from "../Button";
 import { HeaderSearch } from "../HeaderSearch";
+import { IconButtonBell } from "../IconButtonBell";
 
 export default {
   title: "Header",
@@ -35,14 +33,7 @@ SmallMobile.args = {
       <Space columnGap={Gap.Medium} alignItems="center">
         <div>
           <HeaderSearch />
-          <IconButton>
-            <SvgBell
-              width={24}
-              height={24}
-              display="block"
-              color={vars.color.light}
-            />
-          </IconButton>
+          <IconButtonBell />
         </div>
         <Avatar width={40} height={40}>
           <img
@@ -72,14 +63,7 @@ Tablet.args = {
       <Space columnGap={Gap.Large} alignItems="center">
         <div>
           <HeaderSearch />
-          <IconButton>
-            <SvgBell
-              width={24}
-              height={24}
-              display="block"
-              color={vars.color.light}
-            />
-          </IconButton>
+          <IconButtonBell />
         </div>
         <Space alignItems="center">
           <Avatar width={40} height={40}>
@@ -108,14 +92,7 @@ PC.args = {
       <div>LOGO</div>
       <Space columnGap={Gap.Large} alignItems="center">
         <HeaderSearch />
-        <IconButton>
-          <SvgBell
-            width={24}
-            height={24}
-            display="block"
-            color={vars.color.light}
-          />
-        </IconButton>
+        <IconButtonBell />
         <Space alignItems="center">
           <Avatar width={40} height={40}>
             <img
