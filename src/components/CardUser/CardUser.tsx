@@ -4,16 +4,16 @@ import { className } from "./CardUser.css";
 
 type CardUserProps = {
   avatar: React.ReactNode;
-  nickname: string;
+  author: string;
 };
 
-export const CardUser: React.FC<CardUserProps> = ({ avatar, nickname }) => {
+export const CardUser: React.FC<CardUserProps> = ({ avatar, author }) => {
   return (
     <Space columnGap={Gap.Small} alignItems="center">
       <Avatar width={16} height={16}>
         {avatar}
       </Avatar>
-      <div>{nickname}</div>
+      <div>{author}</div>
     </Space>
   );
 };
