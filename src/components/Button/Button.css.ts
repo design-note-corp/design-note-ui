@@ -14,6 +14,6 @@ export const className = style({
   backgroundColor: vars.color.primary,
 
   ":hover": {
-    backgroundColor: vars.color.primaryLight,
+    backgroundColor: vars.color.primaryDark,
   },
 });
