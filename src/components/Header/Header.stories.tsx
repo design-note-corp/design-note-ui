@@ -1,12 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Gap, Space } from "../Space";
 import { Header } from "./Header";
-import { Edit } from "../Icons";
-import { Avatar } from "../Avatar";
-import { Button } from "../Button";
-import { HeaderSearch } from "../HeaderSearch";
-import { IconButtonBell } from "../IconButtonBell";
 
 export default {
   title: "Header",
@@ -19,6 +13,12 @@ const Template: ComponentStory<typeof Header> = (args) => {
 
 export const SmallMobile = Template.bind({});
 
+SmallMobile.args = {
+  avatar: (
+    <img src="https://placehold.jp/40x40.png" width="100%" height="100%" />
+  ),
+};
+
 SmallMobile.parameters = {
   layout: "fullscreen",
   viewport: {
@@ -26,28 +26,13 @@ SmallMobile.parameters = {
   },
 };
 
-SmallMobile.args = {
-  children: (
-    <Space alignItems="center" justifyContent="space-between">
-      <div>LOGO</div>
-      <Space columnGap={Gap.Medium} alignItems="center">
-        <div>
-          <HeaderSearch />
-          <IconButtonBell />
-        </div>
-        <Avatar width={40} height={40}>
-          <img
-            src="https://placehold.jp/40x40.png"
-            width="100%"
-            height="100%"
-          />
-        </Avatar>
-      </Space>
-    </Space>
+export const Tablet = Template.bind({});
+
+Tablet.args = {
+  avatar: (
+    <img src="https://placehold.jp/40x40.png" width="100%" height="100%" />
   ),
 };
-
-export const Tablet = Template.bind({});
 
 Tablet.parameters = {
   layout: "fullscreen",
@@ -56,54 +41,14 @@ Tablet.parameters = {
   },
 };
 
-Tablet.args = {
-  children: (
-    <Space alignItems="center" justifyContent="space-between">
-      <div>LOGO</div>
-      <Space columnGap={Gap.Large} alignItems="center">
-        <div>
-          <HeaderSearch />
-          <IconButtonBell />
-        </div>
-        <Space alignItems="center">
-          <Avatar width={40} height={40}>
-            <img
-              src="https://placehold.jp/40x40.png"
-              width="100%"
-              height="100%"
-            />
-          </Avatar>
-        </Space>
-        <Button startIcon={<Edit />}>投稿</Button>
-      </Space>
-    </Space>
+export const PC = Template.bind({});
+
+PC.args = {
+  avatar: (
+    <img src="https://placehold.jp/40x40.png" width="100%" height="100%" />
   ),
 };
-
-export const PC = Template.bind({});
 
 PC.parameters = {
   layout: "fullscreen",
-};
-
-PC.args = {
-  children: (
-    <Space alignItems="center" justifyContent="space-between">
-      <div>LOGO</div>
-      <Space columnGap={Gap.Large} alignItems="center">
-        <HeaderSearch />
-        <IconButtonBell />
-        <Space alignItems="center">
-          <Avatar width={40} height={40}>
-            <img
-              src="https://placehold.jp/40x40.png"
-              width="100%"
-              height="100%"
-            />
-          </Avatar>
-        </Space>
-        <Button startIcon={<Edit />}>投稿</Button>
-      </Space>
-    </Space>
-  ),
 };
