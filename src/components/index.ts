@@ -11,5 +11,6 @@ export * from "./TabList";
 export * from "./TabPanel";
 export * from "./TabPanels";
 export * from "./Tabs";
+export * from "./Textarea";
 export * from "./TextField";
 export * from "./ThemeProvider";
