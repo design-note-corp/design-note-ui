@@ -21,7 +21,7 @@ export const CommentForm: React.FC<CommentFormProps> = ({ avatar }) => {
 
       <Textarea placeholder="テキストを入力" height={96} resize="none" />
 
-      <Space justifyContent="right">
+      <Space justifyContent="flex-end">
         <Button startIcon={<SvgEdit />}>送信</Button>
       </Space>
     </Space>
