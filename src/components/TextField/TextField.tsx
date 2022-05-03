@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { Space } from "../Space";
 import * as styles from "./TextField.css";
 
-type TextFieldProps = React.ComponentProps<"input"> & {
+export type TextFieldProps = React.ComponentProps<"input"> & {
   suffix?: React.ReactNode;
 };
 

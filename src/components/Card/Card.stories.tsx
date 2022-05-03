@@ -2,7 +2,6 @@ import dayjs from "dayjs";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Card } from "./Card";
-import type { CardProps } from "./Card";
 
 export default {
   title: "Card",
@@ -13,7 +12,9 @@ const Template: ComponentStory<typeof Card> = (args) => {
   return <Card {...args} />;
 };
 
-const args: CardProps = {
+export const Basic = Template.bind({});
+
+Basic.args = {
   cover: (
     <img src="https://placehold.jp/120x120.png" width="100%" height="100%" />
   ),
@@ -28,26 +29,8 @@ const args: CardProps = {
   likeCount: 130,
 };
 
-export const SmallMobile = Template.bind({});
-
-SmallMobile.args = args;
-
-SmallMobile.parameters = {
-  viewport: {
-    defaultViewport: "mobile1",
+Basic.parameters = {
+  chromatic: {
+    viewports: [320, 600, 905],
   },
 };
-
-export const Tablet = Template.bind({});
-
-Tablet.args = args;
-
-Tablet.parameters = {
-  viewport: {
-    defaultViewport: "tablet",
-  },
-};
-
-export const PC = Template.bind({});
-
-PC.args = args;

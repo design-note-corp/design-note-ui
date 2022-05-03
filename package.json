@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "clsx": "^1.1.1",
-    "dayjs": "^1.11.1"
+    "dayjs": "^1.11.1",
+    "react-responsive": "^9.0.0-beta.6"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
