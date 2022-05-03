@@ -4,11 +4,11 @@ import { Gap, Space } from "../Space";
 import { Header } from "./Header";
 import { IconButton } from "../IconButton";
 import SvgBell from "../Icons/Bell";
-import { Edit, Search } from "../Icons";
+import { Edit } from "../Icons";
 import { Avatar } from "../Avatar";
 import { vars } from "../../styles/theme.css";
 import { Button } from "../Button";
-import { TextField } from "../TextField";
+import { HeaderSearch } from "../HeaderSearch";
 
 export default {
   title: "Header",
@@ -34,14 +34,7 @@ SmallMobile.args = {
       <div>LOGO</div>
       <Space columnGap={Gap.Medium} alignItems="center">
         <div>
-          <IconButton>
-            <Search
-              width={24}
-              height={24}
-              display="block"
-              color={vars.color.light}
-            />
-          </IconButton>
+          <HeaderSearch />
           <IconButton>
             <SvgBell
               width={24}
@@ -78,14 +71,7 @@ Tablet.args = {
       <div>LOGO</div>
       <Space columnGap={Gap.Large} alignItems="center">
         <div>
-          <IconButton>
-            <Search
-              width={24}
-              height={24}
-              display="block"
-              color={vars.color.light}
-            />
-          </IconButton>
+          <HeaderSearch />
           <IconButton>
             <SvgBell
               width={24}
@@ -121,20 +107,7 @@ PC.args = {
     <Space alignItems="center" justifyContent="space-between">
       <div>LOGO</div>
       <Space columnGap={Gap.Large} alignItems="center">
-        <TextField
-          width={360}
-          placeholder="キーワードで検索"
-          suffix={
-            <IconButton>
-              <Search
-                width={24}
-                height={24}
-                display="block"
-                color={vars.color.light}
-              />
-            </IconButton>
-          }
-        />
+        <HeaderSearch />
         <IconButton>
           <SvgBell
             width={24}
