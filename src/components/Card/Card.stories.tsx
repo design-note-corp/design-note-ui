@@ -24,7 +24,7 @@ Basic.args = {
   avatar: (
     <img src="https://placehold.jp/16x16.png" width="100%" height="100%" />
   ),
-  nickname: "Taro Yamada",
+  author: "Taro Yamada",
   createdAt: dayjs().subtract(2, "day").format(),
   likeCount: 130,
 };

@@ -10,7 +10,7 @@ export type CardProps = {
   title: string;
   chips?: string[];
   avatar: React.ReactNode;
-  nickname: string;
+  author: string;
   createdAt: string;
   likeCount: number;
 };
@@ -20,7 +20,7 @@ export const Card: React.FC<CardProps> = ({
   title,
   chips = [],
   avatar,
-  nickname,
+  author,
   createdAt,
   likeCount,
 }) => {
@@ -32,7 +32,7 @@ export const Card: React.FC<CardProps> = ({
         <CardChips labels={chips} />
         <CardDescription
           avatar={avatar}
-          nickname={nickname}
+          author={author}
           createdAt={createdAt}
           likeCount={likeCount}
         />

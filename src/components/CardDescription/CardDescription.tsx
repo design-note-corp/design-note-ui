@@ -6,20 +6,20 @@ import { Gap, Space } from "../Space";
 
 type CardDescriptionProps = {
   avatar: React.ReactNode;
-  nickname: string;
+  author: string;
   createdAt: string;
   likeCount: number;
 };
 
 export const CardDescription: React.FC<CardDescriptionProps> = ({
   avatar,
-  nickname,
+  author,
   createdAt,
   likeCount,
 }) => {
   return (
     <Space className={className} columnGap={Gap.Large} alignItems="center">
-      <CardUser avatar={avatar} nickname={nickname} />
+      <CardUser avatar={avatar} author={author} />
       <CardCreatedAt createdAt={createdAt} />
       <CardLikeCount likeCount={likeCount} />
     </Space>
