@@ -8,7 +8,7 @@ export const [themeClass, vars] = createTheme({
     light: "#616161",
     medium: "#424242",
     primary: "#e94c89",
-    primaryLight: "#ba1756",
+    primaryDark: "#ba1756",
     white: "#ffffff",
   },
   fontSizes: {
