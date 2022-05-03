@@ -1,3 +1,15 @@
+# [0.8.0](https://github.com/design-note-corp/design-note-ui/compare/v0.7.0...v0.8.0) (2022-05-03)
+
+
+### Features
+
+* add Comment component ([#56](https://github.com/design-note-corp/design-note-ui/issues/56)) ([91a7f9d](https://github.com/design-note-corp/design-note-ui/commit/91a7f9dfe636f2e646ceba9bf4b2e2148cae5a7f))
+* add CommentForm component ([#64](https://github.com/design-note-corp/design-note-ui/issues/64)) ([b55d301](https://github.com/design-note-corp/design-note-ui/commit/b55d301487a95d3c1925190ba08974df03c62539))
+* add Textarea component ([#61](https://github.com/design-note-corp/design-note-ui/issues/61)) ([4652d4e](https://github.com/design-note-corp/design-note-ui/commit/4652d4edf011650b736f914fd29281eb2be2c98b))
+* add Title component ([#63](https://github.com/design-note-corp/design-note-ui/issues/63)) ([4cd1df3](https://github.com/design-note-corp/design-note-ui/commit/4cd1df3b44d2eceb803f5e5931c376d0e24c2531))
+
+
+
 # [0.7.0](https://github.com/design-note-corp/design-note-ui/compare/v0.6.0...v0.7.0) (2022-05-03)
 
 
