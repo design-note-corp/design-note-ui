@@ -16,4 +16,5 @@ Basic.args = {
   avatar: (
     <img src="https://placehold.jp/40x40.png" width="100%" height="100%" />
   ),
+  onSubmit: console.debug,
 };
