@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/design-note-corp/design-note-ui/compare/v0.5.0...v0.6.0) (2022-05-03)
+
+
+### Features
+
+* font-familyを設定 ([#51](https://github.com/design-note-corp/design-note-ui/issues/51)) ([f871d42](https://github.com/design-note-corp/design-note-ui/commit/f871d429182a5a4968387f59a9d504a7e81eade1))
+
+
+
 # [0.5.0](https://github.com/design-note-corp/design-note-ui/compare/v0.4.0...v0.5.0) (2022-05-02)
 
 
