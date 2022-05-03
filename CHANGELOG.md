@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/design-note-corp/design-note-ui/compare/v0.6.0...v0.7.0) (2022-05-03)
+
+
+### Features
+
+* Headerコンポーネントのレスポンシブ対応 ([#53](https://github.com/design-note-corp/design-note-ui/issues/53)) ([edc64f7](https://github.com/design-note-corp/design-note-ui/commit/edc64f718af4d7e9d7b435f0f9bbb20a5990a5c6))
+
+
+
 # [0.6.0](https://github.com/design-note-corp/design-note-ui/compare/v0.5.0...v0.6.0) (2022-05-03)
 
 
